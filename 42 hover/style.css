@@ -1,0 +1,111 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat,Philosopher,Roboto;
+    
+}
+
+
+
+/*========================   Nav manu ==================*/
+
+
+.section-padding {
+  padding: 80px 0;
+}
+.section-tittle {
+  padding-bottom: 90px;
+  text-transform: uppercase;
+}
+.product-img-warp {
+  display: table;
+  height: 300px;
+  background: #f1f1f1;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 30px;
+  position: relative;
+  transition: .3s;
+}
+.product-img-warp-tablecell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.single-product-box h4 {
+  font-family: roboto;
+  color: #707070;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.product-price {
+  font-size: 35px;
+  color: #ff5151;
+  font-family: robot;
+  font-weight: 700;
+}
+.single-product-box {
+  text-align: center;
+  margin-top: 50px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 50px;
+	display: block;
+}
+.single-product-box::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background:url(img/background.jpg) no-repeat scroll center top #3b3b3b;
+  background-size: cover;
+  z-index: -1;
+  transition: .3s;
+  opacity: 0;
+}
+.product-hover-links {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  text-align: left;
+  padding: 0 20px;
+  transition: .3s;
+  opacity: 0;
+  visibility: hidden;
+}
+.product-hover-links a {
+  color: #676767;
+  font-size: 16px;
+  text-align: center;
+  height: 50px;
+  width: 30px;
+  display: inline-block;
+  line-height: 44px;
+}
+.product-hover-links a.borderd-link {
+  border: 2px solid#ff5151;
+  width: 50px;
+}
+.single-product-box:hover::after {
+  top: -10%;
+  height: 120%;
+  opacity: 1;
+}
+.single-product-box:hover .product-img-warp {
+  background: none;
+}
+.single-product-box:hover .product-hover-links {
+  top: -10px;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+
+
